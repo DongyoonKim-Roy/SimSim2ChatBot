@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BotCell" rowHeight="163" id="JzC-Z6-FxA" customClass="BotCell" customModule="SimSim2ChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JzC-Z6-FxA" id="RfN-7c-G74">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕 나는 로봇 뽈롱뽈롱이얌" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrV-v2-7bm">
+                        <rect key="frame" x="20" y="10" width="434" height="143"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ZrV-v2-7bm" secondAttribute="trailing" constant="10" id="7bc-DW-rwv"/>
+                    <constraint firstItem="ZrV-v2-7bm" firstAttribute="top" secondItem="RfN-7c-G74" secondAttribute="top" constant="10" id="Ksv-Ph-UfG"/>
+                    <constraint firstItem="ZrV-v2-7bm" firstAttribute="leading" secondItem="RfN-7c-G74" secondAttribute="leading" constant="20" symbolic="YES" id="dJK-2f-v7K"/>
+                    <constraint firstAttribute="bottom" secondItem="ZrV-v2-7bm" secondAttribute="bottom" constant="10" id="xnu-SB-8aZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.096869213250000002" green="0.37746448290000001" blue="0.16701803069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="botTextLabel" destination="ZrV-v2-7bm" id="pCq-el-Mm9"/>
+            </connections>
+            <point key="canvasLocation" x="235.11450381679387" y="-38.380281690140848"/>
+        </tableViewCell>
+    </objects>
+</document>

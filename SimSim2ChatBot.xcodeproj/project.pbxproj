@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0832374298CECB80066E6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0832373298CECB80066E6BD /* AppDelegate.swift */; };
+		B0832376298CECB80066E6BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0832375298CECB80066E6BD /* SceneDelegate.swift */; };
+		B0832378298CECB80066E6BD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0832377298CECB80066E6BD /* MainVC.swift */; };
+		B083237B298CECB80066E6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0832379298CECB80066E6BD /* Main.storyboard */; };
+		B083237D298CECB90066E6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B083237C298CECB90066E6BD /* Assets.xcassets */; };
+		B0832380298CECB90066E6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B083237E298CECB90066E6BD /* LaunchScreen.storyboard */; };
+		B083238B298CECB90066E6BD /* SimSim2ChatBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B083238A298CECB90066E6BD /* SimSim2ChatBotTests.swift */; };
+		B0832395298CECB90066E6BD /* SimSim2ChatBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0832394298CECB90066E6BD /* SimSim2ChatBotUITests.swift */; };
+		B0832397298CECB90066E6BD /* SimSim2ChatBotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0832396298CECB90066E6BD /* SimSim2ChatBotUITestsLaunchTests.swift */; };
+		B08323A4298CED430066E6BD /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08323A3298CED430066E6BD /* UserCell.xib */; };
+		B08323A6298CED9F0066E6BD /* BotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08323A5298CED9F0066E6BD /* BotCell.xib */; };
+		B08323A8298CEDF20066E6BD /* BotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08323A7298CEDF20066E6BD /* BotCell.swift */; };
+		B08323AA298CEDF70066E6BD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08323A9298CEDF70066E6BD /* UserCell.swift */; };
+		B08323AE298CEEB00066E6BD /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08323AD298CEEB00066E6BD /* CellProtocol.swift */; };
+		B08323B1298CF18B0066E6BD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B08323B0298CF18B0066E6BD /* Alamofire */; };
+		B08323B4298CF3AA0066E6BD /* SimSim2VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08323B3298CF3AA0066E6BD /* SimSim2VM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0832387298CECB90066E6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0832368298CECB80066E6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B083236F298CECB80066E6BD;
+			remoteInfo = SimSim2ChatBot;
+		};
+		B0832391298CECB90066E6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0832368298CECB80066E6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B083236F298CECB80066E6BD;
+			remoteInfo = SimSim2ChatBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0832370298CECB80066E6BD /* SimSim2ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimSim2ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0832373298CECB80066E6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0832375298CECB80066E6BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0832377298CECB80066E6BD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B083237A298CECB80066E6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B083237C298CECB90066E6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B083237F298CECB90066E6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0832381298CECB90066E6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0832386298CECB90066E6BD /* SimSim2ChatBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimSim2ChatBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B083238A298CECB90066E6BD /* SimSim2ChatBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimSim2ChatBotTests.swift; sourceTree = "<group>"; };
+		B0832390298CECB90066E6BD /* SimSim2ChatBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimSim2ChatBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0832394298CECB90066E6BD /* SimSim2ChatBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimSim2ChatBotUITests.swift; sourceTree = "<group>"; };
+		B0832396298CECB90066E6BD /* SimSim2ChatBotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimSim2ChatBotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B08323A3298CED430066E6BD /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		B08323A5298CED9F0066E6BD /* BotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BotCell.xib; sourceTree = "<group>"; };
+		B08323A7298CEDF20066E6BD /* BotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotCell.swift; sourceTree = "<group>"; };
+		B08323A9298CEDF70066E6BD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B08323AD298CEEB00066E6BD /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		B08323B3298CF3AA0066E6BD /* SimSim2VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimSim2VM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B083236D298CECB80066E6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08323B1298CF18B0066E6BD /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0832383298CECB90066E6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B083238D298CECB90066E6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0832367298CECB80066E6BD = {
+			isa = PBXGroup;
+			children = (
+				B0832372298CECB80066E6BD /* SimSim2ChatBot */,
+				B0832389298CECB90066E6BD /* SimSim2ChatBotTests */,
+				B0832393298CECB90066E6BD /* SimSim2ChatBotUITests */,
+				B0832371298CECB80066E6BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0832371298CECB80066E6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0832370298CECB80066E6BD /* SimSim2ChatBot.app */,
+				B0832386298CECB90066E6BD /* SimSim2ChatBotTests.xctest */,
+				B0832390298CECB90066E6BD /* SimSim2ChatBotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0832372298CECB80066E6BD /* SimSim2ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				B0832373298CECB80066E6BD /* AppDelegate.swift */,
+				B0832375298CECB80066E6BD /* SceneDelegate.swift */,
+				B08323AC298CEE670066E6BD /* ViewController */,
+				B08323AB298CEE4C0066E6BD /* UI */,
+				B08323B2298CF1AB0066E6BD /* ViewModel */,
+				B083237C298CECB90066E6BD /* Assets.xcassets */,
+				B083237E298CECB90066E6BD /* LaunchScreen.storyboard */,
+				B0832381298CECB90066E6BD /* Info.plist */,
+			);
+			path = SimSim2ChatBot;
+			sourceTree = "<group>";
+		};
+		B0832389298CECB90066E6BD /* SimSim2ChatBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				B083238A298CECB90066E6BD /* SimSim2ChatBotTests.swift */,
+			);
+			path = SimSim2ChatBotTests;
+			sourceTree = "<group>";
+		};
+		B0832393298CECB90066E6BD /* SimSim2ChatBotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0832394298CECB90066E6BD /* SimSim2ChatBotUITests.swift */,
+				B0832396298CECB90066E6BD /* SimSim2ChatBotUITestsLaunchTests.swift */,
+			);
+			path = SimSim2ChatBotUITests;
+			sourceTree = "<group>";
+		};
+		B08323AB298CEE4C0066E6BD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B08323A3298CED430066E6BD /* UserCell.xib */,
+				B08323A5298CED9F0066E6BD /* BotCell.xib */,
+				B0832379298CECB80066E6BD /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B08323AC298CEE670066E6BD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0832377298CECB80066E6BD /* MainVC.swift */,
+				B08323A7298CEDF20066E6BD /* BotCell.swift */,
+				B08323AD298CEEB00066E6BD /* CellProtocol.swift */,
+				B08323A9298CEDF70066E6BD /* UserCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B08323B2298CF1AB0066E6BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B08323B3298CF3AA0066E6BD /* SimSim2VM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B083236F298CECB80066E6BD /* SimSim2ChatBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B083239A298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBot" */;
+			buildPhases = (
+				B083236C298CECB80066E6BD /* Sources */,
+				B083236D298CECB80066E6BD /* Frameworks */,
+				B083236E298CECB80066E6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimSim2ChatBot;
+			packageProductDependencies = (
+				B08323B0298CF18B0066E6BD /* Alamofire */,
+			);
+			productName = SimSim2ChatBot;
+			productReference = B0832370298CECB80066E6BD /* SimSim2ChatBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0832385298CECB90066E6BD /* SimSim2ChatBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B083239D298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBotTests" */;
+			buildPhases = (
+				B0832382298CECB90066E6BD /* Sources */,
+				B0832383298CECB90066E6BD /* Frameworks */,
+				B0832384298CECB90066E6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0832388298CECB90066E6BD /* PBXTargetDependency */,
+			);
+			name = SimSim2ChatBotTests;
+			productName = SimSim2ChatBotTests;
+			productReference = B0832386298CECB90066E6BD /* SimSim2ChatBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B083238F298CECB90066E6BD /* SimSim2ChatBotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B08323A0298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBotUITests" */;
+			buildPhases = (
+				B083238C298CECB90066E6BD /* Sources */,
+				B083238D298CECB90066E6BD /* Frameworks */,
+				B083238E298CECB90066E6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0832392298CECB90066E6BD /* PBXTargetDependency */,
+			);
+			name = SimSim2ChatBotUITests;
+			productName = SimSim2ChatBotUITests;
+			productReference = B0832390298CECB90066E6BD /* SimSim2ChatBotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0832368298CECB80066E6BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B083236F298CECB80066E6BD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B0832385298CECB90066E6BD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B083236F298CECB80066E6BD;
+					};
+					B083238F298CECB90066E6BD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B083236F298CECB80066E6BD;
+					};
+				};
+			};
+			buildConfigurationList = B083236B298CECB80066E6BD /* Build configuration list for PBXProject "SimSim2ChatBot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0832367298CECB80066E6BD;
+			packageReferences = (
+				B08323AF298CF18B0066E6BD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = B0832371298CECB80066E6BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B083236F298CECB80066E6BD /* SimSim2ChatBot */,
+				B0832385298CECB90066E6BD /* SimSim2ChatBotTests */,
+				B083238F298CECB90066E6BD /* SimSim2ChatBotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B083236E298CECB80066E6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08323A4298CED430066E6BD /* UserCell.xib in Resources */,
+				B08323A6298CED9F0066E6BD /* BotCell.xib in Resources */,
+				B0832380298CECB90066E6BD /* LaunchScreen.storyboard in Resources */,
+				B083237D298CECB90066E6BD /* Assets.xcassets in Resources */,
+				B083237B298CECB80066E6BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0832384298CECB90066E6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B083238E298CECB90066E6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B083236C298CECB80066E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0832378298CECB80066E6BD /* MainVC.swift in Sources */,
+				B08323AE298CEEB00066E6BD /* CellProtocol.swift in Sources */,
+				B08323A8298CEDF20066E6BD /* BotCell.swift in Sources */,
+				B08323B4298CF3AA0066E6BD /* SimSim2VM.swift in Sources */,
+				B0832374298CECB80066E6BD /* AppDelegate.swift in Sources */,
+				B08323AA298CEDF70066E6BD /* UserCell.swift in Sources */,
+				B0832376298CECB80066E6BD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0832382298CECB90066E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B083238B298CECB90066E6BD /* SimSim2ChatBotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B083238C298CECB90066E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0832395298CECB90066E6BD /* SimSim2ChatBotUITests.swift in Sources */,
+				B0832397298CECB90066E6BD /* SimSim2ChatBotUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0832388298CECB90066E6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B083236F298CECB80066E6BD /* SimSim2ChatBot */;
+			targetProxy = B0832387298CECB90066E6BD /* PBXContainerItemProxy */;
+		};
+		B0832392298CECB90066E6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B083236F298CECB80066E6BD /* SimSim2ChatBot */;
+			targetProxy = B0832391298CECB90066E6BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0832379298CECB80066E6BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B083237A298CECB80066E6BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B083237E298CECB90066E6BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B083237F298CECB90066E6BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0832398298CECB90066E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0832399298CECB90066E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B083239B298CECB90066E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimSim2ChatBot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B083239C298CECB90066E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimSim2ChatBot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B083239E298CECB90066E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimSim2ChatBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimSim2ChatBot";
+			};
+			name = Debug;
+		};
+		B083239F298CECB90066E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimSim2ChatBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimSim2ChatBot";
+			};
+			name = Release;
+		};
+		B08323A1298CECB90066E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimSim2ChatBot;
+			};
+			name = Debug;
+		};
+		B08323A2298CECB90066E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D4BLFV4Q66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RoyKim.SimSim2ChatBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimSim2ChatBot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B083236B298CECB80066E6BD /* Build configuration list for PBXProject "SimSim2ChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0832398298CECB90066E6BD /* Debug */,
+				B0832399298CECB90066E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B083239A298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B083239B298CECB90066E6BD /* Debug */,
+				B083239C298CECB90066E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B083239D298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B083239E298CECB90066E6BD /* Debug */,
+				B083239F298CECB90066E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B08323A0298CECB90066E6BD /* Build configuration list for PBXNativeTarget "SimSim2ChatBotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08323A1298CECB90066E6BD /* Debug */,
+				B08323A2298CECB90066E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B08323AF298CF18B0066E6BD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B08323B0298CF18B0066E6BD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08323AF298CF18B0066E6BD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B0832368298CECB80066E6BD /* Project object */;
+}
